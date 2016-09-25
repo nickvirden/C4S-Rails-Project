@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Code4StartUp</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    
+    <!--Import jQuery before materialize.js-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    
+    <!-- Controls the use of material-icons class-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+
+      <nav id="top">
+        <div class="nav-wrapper">
+          <a class="brand-logo">Nick Virden (dot) Com</a>
+          <ul class="right">
+            <li class="hide-on-med-and-down"><a href="#projects">Projects</a></li>
+            <li class="hide-on-med-and-down"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+      <!--Fixed Button-->
+      <div class="fixed-action-btn horizontal click-to-toggle">
+        <a class="btn-floating btn-large red" href="#top">
+          <i class="material-icons">publish</i>
+        </a>
+      </div>
+
+      <div class="head">
+        <div class="hide_sidebar">
+            <div class="prefix">
+                <div>
+                    <div class="with_cover">
+                        <div class="cover expand">
+                            <%= image_tag "ZilkerPark.jpg", class: "square responsive-img zilker", style: "width: 100%;" %>
+                        </div> 
+                    </div>
+                    <div class="row profile_photo">
+                        <div class="col s4 m4 l4 push-s4 push-m4 push-l4">
+                            <%= image_tag "Family.jpg", class: "circle responsive-img", style: "border: 2px solid white;" %>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+      </div>
+
+      <%= yield %>
+
+      <script src="https://kswedberg.github.io/jquery-smooth-scroll/lib/jquery/jquery.js"></script>
+      <script src="https://kswedberg.github.io/jquery-smooth-scroll/src/jquery.smooth-scroll.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/additional-methods.min.js"></script>
+
+  </body>
+
+  <footer class="page-footer">
+    <div class="contain">
+      <div class="row">
+        <div class="col s12 m6 l6 about-me">
+          <h5 class="white-text">Nicholas Virden</h5>
+            <p class="grey-text text-lighten-4">Nicholas Virden is a critically-acclaimed, self-proclaimed foodie with a certain impartiality to anything of the Chinese, Japanese, Korean, Thai, and Indian culinary traditions, but he always has time for TexMex or a delicious breakfast taco. When he's not drinking a glass of wine, talking about politics, or kicking ass Bruce Lee style, he spends his days developing (hopefully) beautiful websites.</p>
+        </div>
+        <div id="contact-me" class="col s12 m4 l4 push-m2 push-l2">
+          <h5 class="white-text">Contact Me!</h5>
+          <div class="row contact-icons">
+            <div class="col s1 m12 l12 push-s4">
+              <a class="btn-floating blue" href="tel:+15124660813"><i class="material-icons">perm_phone_msg</i></a>
+              <a class="grey-text text-lighten-3 hide-on-small-only"> (512) 466 0813</a>
+            </div>
+            <div class="col s1 m12 l12 push-s4">
+              <a class="btn-floating blue" href="mailto:nickvirden@gmail.com"><i class="material-icons">email</i></a>
+              <a class="grey-text text-lighten-3 hide-on-small-only"> nickvirden@nickvirden.com</a>
+            </div>
+            <div class="col s1 m12 l12 push-s4 twitter-icon">
+              <a class="hoverable" href="http://www.twitter.com/nickvirden" target="_blank"><%= image_tag "TwitterIcon.png", class: "circle" %></a>
+              <a class="grey-text text-lighten-3 hide-on-small-only">@nickvirden</a>
+            </div>
+            <div class="col s1 m12 l12 push-s4 instagram-icon">
+              <a class="hoverable" href="http://www.instagram.com/nickvirden" target="_blank"><%= image_tag "InstagramIcon.png", class: "square" %></a>
+              <a class="grey-text text-lighten-3 hide-on-small-only">@nickvirden</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+        © 2016 Nicholas Virden | All Rights Reserved
+    </div>
+  </footer>
+</html>

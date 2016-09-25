@@ -1,0 +1,109 @@
+<div>
+    <div class="row card-content buttons">
+        <div class="card-panel white lighten-5 z-depth-0">
+            <div class="btn-wrapper">
+                <a class="waves-effect waves-light btn"><i class="material-icons left">work</i>Résumé</a>
+                <a class="waves-effect waves-light btn" href="https://www.linkedin.com/in/nicholas-virden-91018660" target="_blank">
+                    <%= image_tag "LinkedIn.png", class: "circle responsive-img" %>
+                    <span>LinkedIn</span>
+                </a>
+                <a class="waves-effect waves-light btn" href="https://github.com/nickvirden" target="_blank">
+                    <%= image_tag "GithubIcon.png", class: "circle responsive-img" %>
+                    <span>Github</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="projects" class="about-title">
+    <div class="about-text-div white-text">
+        PROJECTS
+    </div>
+    <div class="about-divider"></div>
+</div>
+
+<!--Floating tile section-->
+<div class="row list-info-tiles">
+    <div class="col s6 m4 14">
+        <div class="info-tile z-depth-3">
+            <%= image_tag "VagrantChef.png", class: "square responsive-img" %>
+            <div class="info-tile-content valign-wrapper">
+                <div class="valign">
+                    <span class="white-text">I virtualized this app with Vagrant and Chef.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col s6 m4 14">
+        <div class="info-tile z-depth-3">
+            <%= image_tag "RubyOnRails.png", class: "square responsive-img" %>
+            <div class="info-tile-content valign-wrapper">
+                <div class="valign">
+                    <span class="white-text">I developed the site with Rails 4+.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col s6 m4 14">
+        <div class="info-tile z-depth-3 materialize-tile">
+            <%= image_tag "Materialize.png", class: "square responsive-img" %>
+            <div class="info-tile-content valign-wrapper">
+                <div class="valign">
+                    <span class="white-text">I utilized Materialize to style the website.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contact" class="about-title">
+    <div class="about-text-div white-text">
+        CONTACT
+    </div>
+    <div class="about-divider"></div>
+</div>
+
+<div class="container">
+  <h5 class="contact_page">Hi there! I promise I'm super friendly and I won't bite. I just like to eat food, which you can check out on my <strong><a href="http://www.instagram.com/nickvirden" target="_blank">Instagram</a></strong>.</h5>
+</div>
+
+<div class="form_container">
+    <div class="row">
+        <form id="formValidate" class="col s12 m6 l6 push-m3 push-l3" method="get">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="name" name="name" data-error=".errorTxt1" type="text">
+                    <label for="name">Name</label>
+                    <div class="errorTxt1"></div>
+                </div>
+                <div class="input-field col s6">
+                    <input id="email" name="email" type="email" data-error=".errorTxt2">
+                    <label for="email">Email</label>
+                    <div class="errorTxt2"></div>
+                </div>
+                <div class="input-field col s6">
+                    <input id="tel" name="tel" type="text" data-error=".errorTxt3">
+                    <label for="tel">Phone Number</label>
+                    <div class="errorTxt3"></div>
+                </div>
+                <div class="input-field col s6">
+                    <input disabled value="Just kidding!" id="disabled" type="text">
+                    <label for="disabled">Social Security Number</label>
+                </div>
+                <div class="input-field col s6 m12 l12 push-s3">
+                    <textarea id="textarea1" class="materialize-textarea" name="textarea1" type="text" data-error=".errorTxt4"></textarea>
+                    <label for="textarea1">Drop Me a Line!</label>
+                    <div class="errorTxt4"></div>
+                </div>
+                <div class="input-field nickname">
+                    <textarea id="textarea2" class="materialize-textarea" name="textarea2" type="text"></textarea>
+                    <label for="textarea2">What's your Nickname?</label>
+                </div>
+                <div class="col s12 m12 l12 push-s4 push-m4 push-l4">
+                    <button class="waves-effect waves-light btn" type="submit"><i class="mdi-communication-email left"></i>send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

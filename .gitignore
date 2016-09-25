@@ -1,0 +1,10 @@
+# Ignore .vagrant and cookbooks folders
+.vagrant/
+cookbooks/
+site-cookbooks/
+tmp/
+
+# Ignore Vagrantfile and Cheffile
+Vagrantfile
+Cheffile
+Cheffile.lock

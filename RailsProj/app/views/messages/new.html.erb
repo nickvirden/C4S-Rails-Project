@@ -1,0 +1,60 @@
+<%= form_for @message do |f| %>
+  <% if @message.errors.any? %>
+    <div id="error_explanation" sytle="font-size: 1.5em">
+        <%= #{}"#{pluralize(@message.errors.count, "fix")}! 
+        "Make sure you filled out everything correctly. :O" %>
+
+      <ul>
+        <% @message.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      <ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+  </div>
+
+  <div class="field">
+    <%= f.label :subject %>
+    <%= f.text_field :subject %>
+  </div>
+
+  <div class="field">
+    <%= f.label :content %>
+    <%= f.text_area :content %>
+  </div>
+
+  <div id="hidden" class="field">
+    <%= f.label :nickname %>
+    <%= f.text_area :nickname %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit 'Send', class: 'btn' %>
+  </div>
+<% end %>
+
+
+<!--div align="center">
+  <h3>Send A Message to Us</h3-->
+
+  <!--%= simple_form_for @message, :html => {:class => 'form-horizontal' } do |f| %-->
+    <!--%= f.input :name, :required => true %-->
+    <!--%= f.input :email, :required => true %-->
+    <!--%= f.input :message, :as => :text, :required => true %>
+    <div class= "hidden"-->
+      <!--%= f.input :nickname, :hint => 'Leave this field blank!' %>
+    </div>
+    <div-->
+      <!--%= f.button :submit, 'Send message', :class => "btn btn-primary" %>
+    </div-->
+  <!--% end %>
+</div-->

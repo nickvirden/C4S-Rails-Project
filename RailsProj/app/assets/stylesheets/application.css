@@ -1,0 +1,117 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.nav-wrapper {
+    margin-left: 1%;
+}
+
+/* Header Styling */
+.row.profile_photo {
+    margin-bottom: 0px;
+}
+
+/* Footer Styling */
+
+p {
+    text-align: justify;
+}
+
+#contact-me div div.col {
+    margin-bottom: 1%;
+    padding: 0;
+}
+
+.twitter-icon img, .instagram-icon img {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 37px;
+    z-index: 1;
+}
+
+.instagram-icon img {
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 662px) {
+    #contact-me, .about-me {
+        text-align: center;
+    }
+
+    .row.contact-icons {
+        margin: 0;
+    }
+
+    .contact-icons div a {
+        margin-right: 5px;
+    }
+}
+
+/* Footer Copyright Formatting */
+
+.contain {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-copyright {
+    text-align: center;
+}
+
+/* Main Title Photo Styling */
+div.head > div {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+    }
+
+.expand {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.expand img {
+    margin-top: -4%;
+}
+
+.with_cover {
+    font-weight: 300;
+    position: relative;
+    min-height: 110px;
+    max-height: 400px;
+}
+
+.prefix {
+    position: relative;
+    z-index: 2;
+}
+
+.hide_sidebar {
+    position: relative;
+}
+
+.profile_photo {
+    margin-top: -11%;
+}
